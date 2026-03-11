@@ -1,19 +1,25 @@
+/* Fondo general */
 body{
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg,#3498db,#8e44ad);
+    margin: 0;
 }
 
+/* Menu */
 ul{
     list-style: none;
-    padding: 0;
-    width: 300px;
-    margin: 50px auto;
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(0,0,0,0.3);
 }
 
 ul li{
     background: white;
-    padding: 15px;
-    margin: 10px 0;
+    padding: 12px 20px;
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
@@ -25,4 +31,50 @@ ul li:hover{
     background: #3498db;
     color: white;
     transform: scale(1.05);
+}
+
+/* Seccion bienvenida */
+#bienvenido{
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+/* Imagen redonda */
+#bienvenido img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid white;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Titulo principal */
+#bienvenido h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/* Subtitulo */
+#bienvenido h2{
+    font-size: 22px;
+    font-weight: normal;
+}
+
+/* Seccion bio */
+#bio{
+    background: white;
+    margin: 40px auto;
+    width: 70%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Texto */
+#bio p{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
 }
